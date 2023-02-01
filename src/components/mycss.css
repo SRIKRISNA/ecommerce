@@ -1,0 +1,32 @@
+
+/* main page */
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+/* header */
+
+.btns{
+    background-color: red;
+    color: white;
+    padding: 7px;
+    width: max-content;
+    cursor: pointer;
+    border: none;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+/* products page */
+.productsection img, .imagePop{
+    width: 200px;
+    height: 200px;
+}
+
