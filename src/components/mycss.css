@@ -7,9 +7,18 @@
     row-gap: 50px;
     column-gap: 50px;
     flex-wrap: wrap;
+    margin: 30px;
 }
 /* header */
-
+.header{
+    background: rgb(0, 255, 234);
+}
+/* category */
+.listCategory{
+    text-align: left;
+    /* float: left; */
+    padding-left: 100px;
+}
 .btns{
     background-color: red;
     color: white;
@@ -30,3 +39,12 @@
     height: 200px;
 }
 
+.red{
+    color: red;
+    font-size: 18px;
+}
+.gray{
+    color: gray;
+    font-size: 18px;
+
+}
