@@ -1,12 +1,12 @@
 import Modal  from "react-bootstrap/Modal";
 
 const PopUp = ({description, category, image, popShow, setPopShow}) => {
-    function handleClose(){
+    const handleClose = () =>{
         setPopShow(false);
     }
     return(
         <div className="mainPopup">
-            <Modal popShow={popShow} onHide={handleClose} animation={false}>
+            <Modal popShow={popShow} onHide={handleClose} >
                 <Modal.Header closeButton>
                     <Modal.Title>{category}</Modal.Title>
                 </Modal.Header>

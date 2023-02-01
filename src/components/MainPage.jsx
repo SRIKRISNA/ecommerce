@@ -38,13 +38,14 @@ const MainPage = () => {
         })
     }, [get]);
 
-    // popup 
-    const handlePopup = (description, category, image)=>{
-        let popData = [description, category, image];
-        setPopData(item => [1, ...popData]);
-        setPopShow(true);
+    // popup modal handle
+    const handleClick = (description, category, image)=>{
+        // let popData = [description, category, image];
+        // setPopData(item => [1, ...popData]);
+        // setPopShow(true);
+        alert(description);
     }
-    const handlePopupHover = (description, category, image)=>{
+    const handleHover = (description, category, image)=>{
         let popData = [description, category, image];
         setPopData(item => [1, ...popData]);
         setTimeout(()=>{
@@ -70,9 +71,9 @@ const MainPage = () => {
                     data.slice(pagination.start, pagination.end).map((item, i) =>{
                         return(
                             <div key={i} className="productsection">
-                                <img src={item.image} 
-                                onClick={()=> handlePopup(item.description, item.category, item.image)}
-                                onMouseOver={()=> handlePopupHover(item.description, item.category, item.image)} />
+                                <img src={item.image} alt="imhg" width="200px" height="200px"
+                                onClick={()=> handleClick(item.description, item.category, item.image)}
+                                onMouseOver={()=> handleHover(item.description, item.category, item.image)} />
                             </div>
                         )
                     })
